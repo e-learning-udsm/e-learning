@@ -22,7 +22,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/e-learning">
         <div className="min-h-screen flex flex-col relative">
           <AnimatedBackground />
           <Navigation />
@@ -32,7 +32,7 @@ const App = () => (
               <Route path="/about" element={<About />} />
               <Route path="/research" element={<Research />} />
               <Route path="/team" element={<Team />} />
-              {/* <Route path="/" element={<Publications />} /> */} 
+              {/* <Route path="/" element={<Publications />} /> */}
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
